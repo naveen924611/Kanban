@@ -1,0 +1,95 @@
+.board-page {
+  min-height: 100vh;
+  background: #0079bf;
+}
+
+.board-navbar {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-left h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-back {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-center {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+.board-content {
+  padding: 16px;
+  overflow-x: auto;
+  height: calc(100vh - 60px);
+}
+
+.lists-container {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.add-list-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 280px;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.add-list-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.new-list-form {
+  background: #ebecf0;
+  padding: 12px;
+  border-radius: 8px;
+  min-width: 280px;
+}
+
+.new-list-form input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #0079bf;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}

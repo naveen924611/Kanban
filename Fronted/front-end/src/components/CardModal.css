@@ -1,0 +1,233 @@
+.card-modal {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #5e6c84;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+}
+
+.modal-close:hover {
+  background: #e4e6ea;
+}
+
+.modal-content {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+}
+
+.modal-main {
+  flex: 1;
+}
+
+.modal-main h2 {
+  color: #172b4d;
+  margin-bottom: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.modal-main h2:hover {
+  background: #f4f5f7;
+}
+
+.edit-title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px;
+  border: 2px solid #0079bf;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.modal-section {
+  margin-bottom: 24px;
+}
+
+.modal-section h3 {
+  font-size: 14px;
+  color: #5e6c84;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.labels-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.labels-container .label {
+  position: relative;
+  padding-right: 24px;
+}
+
+.labels-container .label button {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-add-label {
+  background: #e4e6ea;
+  color: #172b4d;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.description {
+  color: #172b4d;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 60px;
+  line-height: 1.6;
+}
+
+.description:hover {
+  background: #f4f5f7;
+}
+
+.modal-section textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #0079bf;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #dfe1e6;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.comment-form input:focus {
+  outline: none;
+  border-color: #0079bf;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment {
+  display: flex;
+  gap: 8px;
+}
+
+.comment-content {
+  flex: 1;
+  background: #f4f5f7;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.comment-header strong {
+  font-size: 13px;
+  color: #172b4d;
+}
+
+.comment-time {
+  font-size: 11px;
+  color: #5e6c84;
+}
+
+.comment-content p {
+  font-size: 14px;
+  color: #172b4d;
+  line-height: 1.4;
+}
+
+.modal-sidebar {
+  width: 180px;
+}
+
+.modal-sidebar h3 {
+  font-size: 14px;
+  color: #5e6c84;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sidebar-btn {
+  width: 100%;
+  background: #e4e6ea;
+  color: #172b4d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.sidebar-btn:hover {
+  background: #d0d4db;
+}
+
+.sidebar-btn.delete {
+  background: #ffebe6;
+  color: #bf2600;
+}
+
+.sidebar-btn.delete:hover {
+  background: #ffcccb;
+}
+
+.modal-sidebar hr {
+  border: none;
+  border-top: 1px solid #dfe1e6;
+  margin: 16px 0;
+}
