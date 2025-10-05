@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -48,6 +46,7 @@ const listRoutes = require('./routes/listRoutes');
 const cardRoutes = require('./routes/cardRoutes');
 const commentRoutes = require('./routes/commentRoutes');
 const activityRoutes = require('./routes/activityRoutes');
+const uploadRoutes = require('./routes/upload'); // newly added
 
 // Make io accessible to routes BEFORE registering routes
 app.set('io', io);
@@ -60,6 +59,8 @@ app.use('/api/lists', listRoutes);
 app.use('/api/cards', cardRoutes);
 app.use('/api/comments', commentRoutes);
 app.use('/api/activity', activityRoutes);
+app.use('/api/upload', uploadRoutes);
+
 
 // Test route
 app.get('/api/test', (req, res) => {

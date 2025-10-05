@@ -231,3 +231,30 @@
   border-top: 1px solid #dfe1e6;
   margin: 16px 0;
 }
+.attachments-list {
+  margin-top: 12px;
+}
+
+.attachment-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f5f7;
+  padding: 6px 8px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+
+.attachment-item a {
+  color: #0079bf;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.attachment-item a:hover {
+  text-decoration: underline;
+}
+
+.file-type {
+  font-size: 11px;
+  color: #5e6c84;
+}

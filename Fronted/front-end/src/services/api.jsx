@@ -56,3 +56,12 @@ export const getActivities = (boardId) => api.get(`/activity/board/${boardId}`);
 // Workspaces
 export const getWorkspaces = () => api.get('/workspaces');
 export const createWorkspace = (data) => api.post('/workspaces', data);
+
+export const uploadAttachment = (cardId, file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+
+  return api.post(`/upload/${cardId}`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  });
+};

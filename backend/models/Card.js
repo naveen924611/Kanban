@@ -35,7 +35,15 @@ const cardSchema = new mongoose.Schema({
   }],
   dueDate: {
     type: Date
-  }
+  },
+  attachments: [
+    {
+      name: String,
+      url: String,
+      type: String,
+      size: Number,
+    },
+  ],
 }, {
   timestamps: true
 });
